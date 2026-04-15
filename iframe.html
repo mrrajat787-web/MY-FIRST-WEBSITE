@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Iframe Page</title>
+    <title>Iframe Video Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f3;
             text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .video-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        iframe {
-            border-radius: 5px;
-            border: none;
+            padding: 40px;
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+        }
+        .video-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
 
     <h1>Iframe Tag Example</h1>
-    <p>Niche di gayi video ab chalni chahiye:</p>
+    <p>Niche di gayi video YouTube se load ho rahi hai:</p>
 
-    <div class="video-container">
+    <div class="video-box">
         <iframe 
-            width="100%" 
-            height="450" 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
     </div>
 
     <br>
-    <a href="index.html">Back to Home</a>
+    <a href="index.html" class="back-btn">Go Back to Home</a>
 
 </body>
 </html>
